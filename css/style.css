@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    fleX: auto;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    background-color: #38220ff8;
+    color: #ffffff;
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    gap: 10px;
+}
+
+.logo {
+    height: 30px;
+}
+
+.checkout-item {
+    grid-area: checkout-item;
+}
+
+.checkout-value {
+    grid-area: checkout-value;
+}
+
+.button {
+    grid-area: button;
+    background-color: #f1c58b;
+    padding: 10px 100px; 
+    margin: 10px 60px;
+    border-radius: 20px;
+    border-color: white;
+ }
+
+.checkout-list:last-child {
+    margin: 10px 0px;
+}
+
+.footer {
+    display: grid;
+    grid-template-areas: 
+        ". . checkout-item checkout-value . . "
+        "button button button button button button";
+    grid: auto;
+}
+
